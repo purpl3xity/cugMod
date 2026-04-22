@@ -1,4 +1,4 @@
-package org.bowserfartgif.cugmod.content.propulsion;
+package org.bowserfartgif.cugmod.content.propulsion.jet;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,7 +16,6 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.material.FluidState;
-import org.bowserfartgif.cugmod.registry.DoodooBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class ThrusterBlock extends Block implements EntityBlock {

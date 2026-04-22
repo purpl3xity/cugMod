@@ -8,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import org.bowserfartgif.cugmod.Cugmod;
 import org.bowserfartgif.cugmod.content.control.joints.HingeBlockEntity;
 import org.bowserfartgif.cugmod.content.control.wing.ControlSurfaceBlockEntity;
-import org.bowserfartgif.cugmod.content.propulsion.ThrusterBlockEntity;
+import org.bowserfartgif.cugmod.content.propulsion.jet.ThrusterBlockEntity;
 import org.bowserfartgif.cugmod.content.swine.WretchedSwineBlockEntity;
 
 public class DoodooBlockEntities {

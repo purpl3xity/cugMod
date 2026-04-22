@@ -1,4 +1,4 @@
-package org.bowserfartgif.cugmod.content.propulsion;
+package org.bowserfartgif.cugmod.content.propulsion.jet;
 
 import dev.ryanhcode.sable.api.block.BlockSubLevelAssemblyListener;
 import dev.ryanhcode.sable.api.block.propeller.BlockEntityPropeller;
