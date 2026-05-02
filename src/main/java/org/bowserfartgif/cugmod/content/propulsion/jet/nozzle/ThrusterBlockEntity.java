@@ -1,4 +1,4 @@
-package org.bowserfartgif.cugmod.content.propulsion.jet;
+package org.bowserfartgif.cugmod.content.propulsion.jet.nozzle;
 
 import dev.ryanhcode.sable.api.block.BlockSubLevelAssemblyListener;
 import dev.ryanhcode.sable.api.block.propeller.BlockEntityPropeller;
@@ -18,9 +18,8 @@ public class ThrusterBlockEntity extends BlockEntity
 
     Direction facing = getBlockState().getValue(ThrusterBlock.FACING);
 
-    private double thrust = 50;
-
-    private double airflow = 200;
+    public double thrust = 10;
+    public double airflow = 0;
 
     @Override
     public BlockEntityPropeller getPropeller() {
@@ -44,12 +43,12 @@ public class ThrusterBlockEntity extends BlockEntity
 
     @Override
     public double getAirflow() {
-        return airflow * getPowerModifier() * Config.airflowMultiplier;
+        return airflow;
     }
 
     @Override
     public double getThrust() {
-        return thrust * getPowerModifier() * Config.thrustMultiplier;
+        return thrust * getPowerModifier();
     }
 
     @Override

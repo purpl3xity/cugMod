@@ -1,0 +1,15 @@
+{
+	"variants": {
+		"facing=north": { "model": "cugmod:block/intake/intake" },
+
+		"facing=south": { "model": "cugmod:block/intake/intake", "y": 180 },
+
+		"facing=west":  { "model": "cugmod:block/intake/intake", "y": 270 },
+
+		"facing=east":  { "model": "cugmod:block/intake/intake", "y": 90 },
+
+		"facing=up":    { "model": "cugmod:block/intake/intake", "x": 270 },
+
+		"facing=down":  { "model": "cugmod:block/intake/intake", "x": 90 }
+	}
+}

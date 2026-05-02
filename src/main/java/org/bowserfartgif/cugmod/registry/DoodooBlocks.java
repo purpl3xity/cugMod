@@ -13,7 +13,8 @@ import org.bowserfartgif.cugmod.content.control.joints.HingeBlock;
 import org.bowserfartgif.cugmod.content.control.wing.CamberedWingBlock;
 import org.bowserfartgif.cugmod.content.control.wing.ControlSurfaceBlock;
 import org.bowserfartgif.cugmod.content.control.wing.WingBlock;
-import org.bowserfartgif.cugmod.content.propulsion.jet.ThrusterBlock;
+import org.bowserfartgif.cugmod.content.propulsion.jet.intake.IntakeBlock;
+import org.bowserfartgif.cugmod.content.propulsion.jet.nozzle.ThrusterBlock;
 import org.bowserfartgif.cugmod.content.swine.WretchedSwineBlock;
 import org.bowserfartgif.cugmod.content.swine.WretchedSwineBlockItem;
 
@@ -33,6 +34,15 @@ public class DoodooBlocks {
                                             .strength(0.2f)
                                             .requiresCorrectToolForDrops()
                                             .sound(SoundType.COPPER))
+    );
+
+    public static final DeferredHolder<Block, IntakeBlock> INTAKE = BLOCKS.register(
+            "scoop",
+            () -> new IntakeBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .strength(0.2f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.COPPER))
     );
     
     public static final DeferredHolder<Block, WingBlock> WING = BLOCKS.register(

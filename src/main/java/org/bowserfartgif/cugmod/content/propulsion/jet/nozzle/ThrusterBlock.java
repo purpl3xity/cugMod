@@ -1,4 +1,4 @@
-package org.bowserfartgif.cugmod.content.propulsion.jet;
+package org.bowserfartgif.cugmod.content.propulsion.jet.nozzle;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

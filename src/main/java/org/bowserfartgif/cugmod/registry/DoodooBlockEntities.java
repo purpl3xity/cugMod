@@ -8,7 +8,8 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import org.bowserfartgif.cugmod.Cugmod;
 import org.bowserfartgif.cugmod.content.control.joints.HingeBlockEntity;
 import org.bowserfartgif.cugmod.content.control.wing.ControlSurfaceBlockEntity;
-import org.bowserfartgif.cugmod.content.propulsion.jet.ThrusterBlockEntity;
+import org.bowserfartgif.cugmod.content.propulsion.jet.intake.IntakeBlockEntity;
+import org.bowserfartgif.cugmod.content.propulsion.jet.nozzle.ThrusterBlockEntity;
 import org.bowserfartgif.cugmod.content.swine.WretchedSwineBlockEntity;
 
 public class DoodooBlockEntities {
@@ -21,6 +22,14 @@ public class DoodooBlockEntities {
                     () -> BlockEntityType.Builder.of(
                             ThrusterBlockEntity::new,
                             DoodooBlocks.THRUSTER.get()
+                    ).build(null)
+            );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IntakeBlockEntity>> INTAKE =
+            BLOCK_ENTITIES.register("scoop",
+                    () -> BlockEntityType.Builder.of(
+                            IntakeBlockEntity::new,
+                            DoodooBlocks.INTAKE.get()
                     ).build(null)
             );
 
